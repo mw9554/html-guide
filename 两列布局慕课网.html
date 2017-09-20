@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>两列布局页面</title>
+<style type="text/css">
+	body{margin: 0;
+	     padding:0;}
+	.head{width:100%;
+	      height:100px;
+	      background: black;
+	      position: fixed;
+	      line-height: 100px;}
+	.nav{float:right;
+	     padding-right:20px;
+	     font-size: 18px;
+	     word-spacing: 40px;
+	     /*border:1px white solid;*/}
+	a:link {text-decoration: none;
+            color:white;}
+    .container{width: 100%;
+               height: 1000px;
+                padding-top:100px; }
+    .left{width: 50%;
+          height: 1000px;
+          background: #9FC;
+          margin:0 auto;
+          /*line-height: 100px;*/
+          float: left;
+           }
+    .lc{width: 300px;
+        height:60%;
+        margin: 0 auto;
+        text-align: left;
+         line-height: 40px;
+         padding-top:50px; 
+         /*border:1px red solid;*/}
+         
+    .left div{clear: both;}
+    .h1{font-size: 18px;
+        font-weight: bold;}
+    span{border-color:pink;
+         border-style: solid;
+         background: pink;}
+    .right{width: 50%;
+           height: 1000px;
+           background: #9FC;
+           margin:0 auto;
+           line-height: 100px;
+           text-align: center;
+           float:right;}
+    .footer{width: 100%
+            height:6s0px;
+            background: black;
+	        margin:0 auto;
+	        line-height: 60px;
+	        text-align: center;
+	        word-spacing: 40px;}
+
+</style>
+</head>
+<body>
+<div class="head">
+	<img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"/>
+	<div class="nav">
+	<a href="#">课程</a>
+    <a href="#">职业路径</a>
+    <a href="#">实战</a>
+    <a href="#">猿问</a>
+    <a href="#">手记</a>
+    </div>
+</div>
+<div class="container">
+	<div class="left"><div class="lc">
+		<div class="h1">课程推荐</div>
+		<div><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML与CSS3实现动态网页</div>
+		<div><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML与CSS3实现动态网页</div>
+		<div><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML与CSS3实现动态网页</div>
+		<div><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML与CSS3实现动态网页</div>
+		<div><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML与CSS3实现动态网页</div>
+	</div></div>
+	<div class="right"><div class="lc">
+		<div class="h1">课程推荐</div>
+		<div>HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;JavaScript</div>
+		<div>hTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;JavaScript</div>
+		<div>hTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;JavaScript</div>
+	</div></div>
+</div>
+<div class="footer">
+	 <a href="#">课程</a>
+     <a href="#">职业路径</a>
+     <a href="#">实战</a>
+     <a href="#">猿问</a>
+     <a href="#">手记</a>
+</div>
+</body>
+</html>
