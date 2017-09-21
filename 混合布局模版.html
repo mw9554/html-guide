@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>混合布局</title>
+<style type="text/css">
+  body{margin: 0;
+       padding: 0;}
+  .head{width:100%;
+        height: 50px;
+        background: #9FC;
+        margin: 0 auto;
+        line-height: 50px;
+        text-align: center;}
+  .banner{width: 100%;
+          height: 80px;
+          margin:0 auto;
+          background: pink;}
+  .container{width: 100%;
+             height:1000px;
+             margin:0 auto;
+             }
+  .left{width: 60%;
+        height: 1000px;
+        background: yellow;
+        line-height: 500px;
+        text-align: center;
+        float:left;}
+  .right{width: 40%;
+         height: 1000px;
+         line-height: 500px;
+         background: blue;
+         text-align: center;
+         float: right;}
+  .footer{width: 100%;
+          height: 40px;
+          text-align: center;
+          margin:0 auto;
+          background: gray;
+          line-height: 40px;
+          letter-spacing: 20px;}
+</style>
+</head>
+<body>
+<div class="head">这是页面头部</div>
+<div class="banner">轮播区
+</div>
+<div class="container"><div class="left">这是页面左侧</div>
+  <div class="right">这是页面右侧</div></div>
+<div class="footer">页面尾部</div>
+</body>
+</html>
