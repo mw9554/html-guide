@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>圣杯布局慕课网</title>
+  <style type="text/css">
+    body{margin: 0;
+         padding: 0;
+        min-width: 700px;}
+    .head{width: 100%;
+          height: 100px;
+          background: black;
+          margin:0 auto;
+          line-height: 100px;
+          position: fixed;
+          float: left;
+          z-index: 99;
+        }
+    .nav{float: right;
+         padding-right: 20px;
+         word-spacing: 40px;
+         font-size: 18px;
+         }
+    a:link{text-decoration: none;
+           color: #fff;}
+  .container{padding: 100px 300px 0 300px;
+             /*注意fixed浮动*/
+                       
+             }
+  .middle,.left,.right{position: relative;
+                       float:left;
+                       }
+  .middle{width: 100%;
+          background: pink;
+          height: 840px;
+          text-align:center;
+          line-height: 100px;
+          margin:0 auto;
+          padding: 60px 0 0 0;}
+  .left{/*background: gray;*/
+        width: 300px;
+        margin-left:-100%;
+        left:-300px;
+        min-height: 900px;}
+  .lc{margin: 0 auto;
+      text-align: center;
+      line-height: 50px;
+      text-align: left;
+      padding: 40px 0 0 20px;
+      word-spacing: 50px;}
+  span{border-style: solid;
+       border-color: pink;
+       background: pink;}
+  .right{background: #9FC;
+         width: 300px;
+         margin-left: -300px;
+         right: -300px;min-height: 900px;}
+  .rc{margin:0 auto;
+      text-align: left;
+      line-height: 40px;
+      padding: 40px 0 0 10px;
+      word-spacing: 20px;}
+  .footer{margin:0 auto;
+          width: 100%;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          word-spacing: 40px;
+          background: black;
+          float: left;}
+  </style>
+</head>
+<body>
+<div class="head">
+  <img src="http://climg.mukewang.com/590037f600016ce303000100.png"/>
+  <div class="nav">
+    <a href="#">课程</a>
+    <a href="#">职业路径</a>
+    <a href="#">实战</a>
+    <a href="#">提问</a>
+    <a href="#">手记</a>
+  </div>
+</div>
+<div class="container">
+  <div class="middle"><img src="http://climg.mukewang.com/590037e00001fab706000400.jpg"/></div>
+  <div class="left">
+    <div class="lc">
+    <h4>课程推荐</h4>
+    <div><span>职业路径</span></div>
+    <div><span>职业路径</span></div>
+    <div><span>职业路径</span></div>
+    <div><span>职业路径</span></div>
+    <div><span>职业路径</span></div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="rc">
+    <h4>登陆</h4>
+    <input type="text" name="" placeholder="请输入邮箱/手机号"/>
+    <input type="password" name="" placeholder="6-16位密码，曲阜大小写"/>
+    <input type="button" name="" value="登陆" style="background: no-repeat red center;width: 174px;height: 24px;color:#fff; ">
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <a href="#">网站首页</a>
+  <a href="#">企业合作</a>
+  <a href="#">人才招聘</a>
+  <a href="#">联系我们</a>
+  <a href="#">常见问题</a>
+  <a href="#">友情链接</a>
+</div>
+</body>
+</html>
