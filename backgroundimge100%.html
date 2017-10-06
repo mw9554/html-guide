@@ -1,0 +1,26 @@
+100% 100%背景图片将铺满整个内容区，假如说元素有固有宽高，那么背景图片铺满整个100*100背景区域
+
+div {
+    background-image: url(plasma.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box }
+背景图片调整为宽度为50*50，但是背景图片的原点位置为边框box而不是padding-box
+p {
+    background-image: url(tubes.png);
+    background-size: 50% auto;
+    background-origin: border-box }
+背景图片尺寸调整为15*15
+para {
+    background-size: 15px 15px;
+    background-image: url(tile.png)}
+这是默认值，也就是auto auto，此时背景图片的尺寸将会是跟图片的固有尺寸一样.
+
+body {
+    background-size: auto;            /* 默认值 */
+    background-image: url(flower.png) }
+假如两个都是百分比，此时图片就会根据背景区域来按照宽高比自适应，此处背景图片为20*30，但是因为背景重复用了 'round'循环，因此背景区域高度划分了3个33.3等高区域，所以背景图片会自适应调整为20*33.3
+p {
+    background-image: url(chain.png);
+    background-repeat: no-repeat round;
+    background-size: 20% 30% }
