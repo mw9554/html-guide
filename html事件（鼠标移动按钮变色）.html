@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML事件</title>
+</head>
+<body>
+    <input  type="button" value="开始" onmousemove="moveFn(this,'purple')" onmouseout="moveFn(this,'grey')">
+    <input    type="button" value="结束" onmousemove="moveFn(this,'yellow')" onmouseout="moveFn(this,'grey')">
+  <script type="text/javascript">
+    function moveFn(btn,bgCo){
+      btn.style.backgroundColor=bgCo;
+    }
+  </script> 
+</body>
+</html>
