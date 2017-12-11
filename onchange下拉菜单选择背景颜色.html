@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	    <meta charset="UTF-8">
+	    <title>onchange()</title>
+	    <style type="text/css">
+	    	#div{
+	    		width:300px;
+	    		height:300px;
+	    		border:2px solid gray;
+	    		margin:100px  0  0 200px;
+	    	}
+	    </style>
+	    <script type="text/javascript">
+	       window.onload=change;
+	       function change(){
+	       	var sel=document.getElementById("color"),
+	       	    di=document.getElementById("div");
+	       	sel.onchange=function(){
+	       		if(this.value=="0"){
+                  document.body.style.background="white";
+                  di.innerHTML="我没发生任何变化";
+	       		}
+	       		else{
+	       			document.body.style.background=this.value;
+	       			di.innerHTML="我的背景颜色变成了"+this.value+"色";
+	       		}
+	       	}
+	       }
+	    </script>
+	</head>
+	<body>
+        <div>
+        	<span>请选择您喜欢的颜色:</span>
+        	<select id="color">
+        		<option value="0">请选择</option>
+        		<option value="yellow">黄色</option>
+        		<option value="orange">橘色</option>
+        		<option value="pink">粉色</option>
+        		<option value="purple">紫色</option>
+        	</select>
+        </div>
+		<div id="div">我是div</div>
+ </body>
+</html>
