@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>打开/关闭页面</title>
+    </head>
+    <body>
+       <input type="button" name="" value="打开页面">
+       <script type="text/javascript">
+           var btn=document.getElementsByTagName("input")[0];
+           btn.onclick=function(){
+           	var conf=window.confirm("是否打开页面？");
+            if(conf)
+            {
+            	window.open("www.imooc.com","newwindow.html","top=200,left=600,toolbar=no,menubar=no,status=no,location=no,scrollbars=no");
+            }
+            else{window.close();}
+           }
+       </script>
+    </body>
+</html>
