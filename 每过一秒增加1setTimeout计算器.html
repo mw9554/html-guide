@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>打开/关闭页面</title>
+    </head>
+    <body>
+       <input type="text" id="txt" />
+       <input type="button" value="开始">
+       <script type="text/javascript">
+          var num=0,
+              timer=null,
+              begin=document.getElementsByTagName("input")[1],
+              text=document.getElementById('txt');
+              begin.onclick=function numCount(){
+              	text.value=num;
+              	num=num+1;
+              	timer=setTimeout(numCount,1000);
+              }
+       </script>
+    </body>
+</html>
